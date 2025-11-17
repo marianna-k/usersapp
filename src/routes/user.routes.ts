@@ -7,3 +7,5 @@ const router = Router();
 router.get('/api/users', (req,res)=>{
 
 });
+
+export default router;
