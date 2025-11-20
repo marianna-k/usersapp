@@ -9,8 +9,11 @@ import roleRoutes from './routes/role.routes';
 const app = express();
 app.use(morgan('dev'));
 
+app.use(express.json());
+
 //endpoint: /api
 app.use('/api/users', userRoutes); //for this endpoint: /api/users  check any calls in userRoutes, import from user.routes
 app.use('/api/roles', roleRoutes); //for this endpoint: /api/roles  check any calls in roleRoutes, import from role.routes
+
 
 export default app;
